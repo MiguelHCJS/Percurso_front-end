@@ -1,8 +1,8 @@
 /*
 
-Melhor uso da variável criada como 'const' é aquela que não haverá possibilidade de mudanças.
+Melhor uso da variável criada como 'const' é aquela que não haverá possibilidade de mudanças no seu valor.
 
-Para a variável criada como 'let' é possível sua mudança de valor
+Para a variável criada como 'let' é possível sua mudança de valor.
 
 */
 
