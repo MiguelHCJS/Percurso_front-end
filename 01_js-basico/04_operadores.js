@@ -19,3 +19,13 @@ console.log(num1 * num2); // multiplicação
 console.log(num1 ** num2); // potenciação
 console.log(num1 / num2); // divisão
 console.log(num1 % num2); // resto de divisão
+
+/*
+Lembrar da ordem de precedência, assim como na matemática.
+
+1- ()
+2- **
+3- * / %
+4- + -
+
+*/
