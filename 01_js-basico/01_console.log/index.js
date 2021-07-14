@@ -10,7 +10,6 @@ console.log('Me chamo "Miguel", estou aprendendo a programar com JS.');
 
 /* 
 
-Comentario em linha com (// ...)
-E comentário em bloco (linha 11 e linha 16)
+O uso da crase `` permite simplificar e tornar até mais legível a concatenação de algo a ser exibido, nos próximos conteúdos terá o uso constante deste modo.
 
  */

@@ -30,5 +30,5 @@ E quando está fora do objeto é chamadode função.
 A confirm e prompt, podem armazenar a resposta do usuário, basta criar uma variável e atribuir a resposta a ela
 */
 
-let msg = prompt('O que você tem ligo?');
+let msg = prompt('O que você tem lido?');
 alert(`Continue assim, ${msg} parece ser uma ótima leitura.`);

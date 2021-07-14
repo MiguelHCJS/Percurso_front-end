@@ -18,7 +18,7 @@ let pai = 'Miguel';
 let mae = 'Sharelle';
 let filha = 'Sophia';
 
-console.log(pai, 'nasceu em 1995 e conheceu', mae, 'em 2019 e com ela, teve uma linda filha chamada', filha);
+console.log(`${pai} nasceu em 1995 e conheceu ${mae} em 2019 e com ela teve uma linda filha chamada ${filha}`);
 
 /*
 
