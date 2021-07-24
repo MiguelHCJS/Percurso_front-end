@@ -1,0 +1,19 @@
+TAGS BÁSICAS - BASIC TAGS
+---
+TAG | DESCRIPTION
+---|---
+| &lt;!DOCTYPE&gt; | DEFINES THE DOCUMENT TYPE |
+| &lt;HTML&gt; | DEFINES AN HTML DOCUMENT |
+| &lt;HEAD&gt; | CONTAINS METADATA/INFORMATION FOR THE DOCUMENT |
+| &lt;TITLE&gt; | DEFINES A TITLE FOR THE DOCUMENT |
+| &lt;BODY&gt; | DEFINES THE DOCUMENTS'S BODY |
+| &lt;H1&gt; TO &lt;H6&gt; | DEFINES HTML HEADINGS |
+| &lt;P&gt; | DEFINES A PARAGRAPH |
+| &lt;BR&gt; | INSERTS A SINGLE LINE BREAK |
+| &lt;HR&gt; | DEFINES A THEMATIC CHANGE IN THE CONTENT |
+| &lt;!-- --&gt; | DEFINES A COMMENT |
+<br>
+
+REFERENCIA
+
+![https://www.w3schools.com/tags/ref_byfunc.asp](https://myket.ir/app-icon/7422c824-9519-4544-90bb-d2b23cc3c835.png)
