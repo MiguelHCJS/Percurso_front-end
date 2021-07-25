@@ -35,3 +35,8 @@ Tag | Description
 |	&lt;u&gt;	|	Defines some text that is unarticulated and styled differently from normal text	|
 |	&lt;var&gt;	|	Defines a variable	|
 |	&lt;wbr&gt;	|	Defines a possible line-break	|
+<br>
+
+### REFERENCIA
+
+![https://www.w3schools.com/tags/ref_byfunc.asp](https://myket.ir/app-icon/7422c824-9519-4544-90bb-d2b23cc3c835.png)
