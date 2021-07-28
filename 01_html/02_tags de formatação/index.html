@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <p><strong>Abreviações</strong>: &lt;abbr title='nome completo'&gt;Abreviação&lt;/abbr&gt;<br>
         Ex: <abbr title="World Wide Web">www</abbr> &lpar;Passe o mouse em cima do exemplo.&rpar;<br>
         Ex: <abbr title='São Paulo'>SP</abbr><br>
@@ -34,7 +33,7 @@
         fica explícito em leitores de tela.
     </p>
     <hr>
-    <p><strong>Texto bidirecional</strong>: &lt;bdi&gt&lt;/bdi&gt;<br>
+    <p><strong>Texto bidirecional</strong>: &lt;bdi&gt;&lt;/bdi&gt;<br>
         Recebe um texto ou palavra que tenha uma direção diferente do contexto atual<br>
         Ex:<br>
         Usuário <bdi>Carlos</bdi>: 25 anos<br>
@@ -42,6 +41,28 @@
         Usuário <bdi>إيان</bdi>: 30 anos<br>
     </p>
     <hr>
+    <p><strong>Substituição bidirecional</strong>: &lt;bdo&gt;&lt;/bdo&gt;<br>
+        Modifica a direção de leitura de uma palavra ou frase:<br>
+        Ex. sentido esquerda para direita: <bdo dir="ltr">Miguel Tenorio</bdo><br>
+        Ex. sentido direita para esquerda: <bdo dir="rtl">Miguel Tenorio</bdo><br>
+    </p>
+    <hr>
+    <p><strong>Citação curta e longa</strong>:<br>
+        Citação curta com apenas uma linha, usar &lt;q&gt;&lt;/q&gt;<br>
+        Ex: <q>Browsers normally insert quotation marks around the quotation.</q><br>
+        Citação longa, usar &lt;blockquote&gt;&lt;/blockquote&gt;<br>
+        Ex: <blockquote cite="a fonte de referência">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero earum quasi porro deleniti fuga rem hic commodi nostrum alias id soluta quaerat laudantium qui dolore, accusamus reprehenderit corrupti voluptatibus voluptates?</blockquote>
+    </p>
+    <hr>
+    <p><strong>Destaque em título de trabalhos artistica/criativa</strong> &lt;cite&gt;&lt;/cite&gt;:<br>
+        Ex: <cite>Mona Lisa</cite> de Leonardo Da Vinci de 1503.<br>
+        Em volta do título da obra, o nome do artista não é título.
+    </p>
+    <hr>
+    <p><strong>Define a marcação como um código</strong>: &lt;code&gt;&lt;/code&gt;<br>
+        Ex: <q>Criando variável em JavaScript: <code>var</code> nome = Miguel.</q><br>
+        A palavra <q>var</q>, foi marcada com a tag que refere-se a um código que no caso é do JavaScript.
+    </p>
 
 </body>
 
