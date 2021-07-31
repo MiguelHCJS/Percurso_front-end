@@ -1,4 +1,4 @@
-TAGS DE FORMATAÇÃO - Formatting				
+TAGS DE FORMATAÇÃO - FORMATTING				
 ---				
 Tag | Description
 --- | ---		
@@ -36,6 +36,11 @@ Tag | Description
 |	&lt;var&gt;	|	Defines a variable	|
 |	&lt;wbr&gt;	|	Defines a possible line-break	|
 <br>
+
+<!--
+#### PELO CODEPEN
+
+![](https://lh5.googleusercontent.com/iA6XX08TUnQJg_NMCUcZZIc9ssd-gdiPOpJNy3I4aDwdcNrzZ9FEfrJCkiuwwUbYxfeWacYtKuyu32kvCG13OoQWR7c9B_-F2E8UF9SXQnN9uEXh29XA5hueDN4XNEpb5F-azgpV) -->
 
 ### REFERENCIA
 

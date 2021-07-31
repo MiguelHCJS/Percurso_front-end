@@ -2,17 +2,21 @@ TAGS BÁSICAS - BASIC TAGS
 ---
 TAG | DESCRIPTION
 ---|---
-| &lt;!DOCTYPE&gt; | DEFINES THE DOCUMENT TYPE |
-| &lt;HTML&gt; | DEFINES AN HTML DOCUMENT |
-| &lt;HEAD&gt; | CONTAINS METADATA/INFORMATION FOR THE DOCUMENT |
-| &lt;TITLE&gt; | DEFINES A TITLE FOR THE DOCUMENT |
-| &lt;BODY&gt; | DEFINES THE DOCUMENTS'S BODY |
-| &lt;H1&gt; TO &lt;H6&gt; | DEFINES HTML HEADINGS |
-| &lt;P&gt; | DEFINES A PARAGRAPH |
-| &lt;BR&gt; | INSERTS A SINGLE LINE BREAK |
-| &lt;HR&gt; | DEFINES A THEMATIC CHANGE IN THE CONTENT |
-| &lt;!-- --&gt; | DEFINES A COMMENT |
+| &lt;!DOCTYPE&gt; | Defines the document type |
+| &lt;html&gt; | Defines an HTML document |
+| &lt;head&gt; | Constains metadata/Information for the document |
+| &lt;title&gt; | Defines a title for the document |
+| &lt;body&gt; | Defines the document's body |
+| &lt;h1&gt; to &lt;h6&gt; | Defines HTML Headings |
+| &lt;p&gt; | Defines a paragraph |
+| &lt;br&gt; | Inserts a single line break |
+| &lt;hr&gt; | Defines a thematic change in the content |
+| &lt;!-- --&gt; | Defines a comment |
 <br>
+
+#### PELO CODEPEN
+
+![https://codepen.io/Miguel-HCJS/pen/OJmZBwR](https://lh5.googleusercontent.com/iA6XX08TUnQJg_NMCUcZZIc9ssd-gdiPOpJNy3I4aDwdcNrzZ9FEfrJCkiuwwUbYxfeWacYtKuyu32kvCG13OoQWR7c9B_-F2E8UF9SXQnN9uEXh29XA5hueDN4XNEpb5F-azgpV)
 
 ### REFERENCIA
 
