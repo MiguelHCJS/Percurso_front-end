@@ -7,16 +7,21 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Tags de formatação</title>
     <link rel='stylesheet' href=''>
+    <style>
+        body {
+            margin: 50px;
+        }
+    </style>
 </head>
 
 <body>
-    <p><strong>Abreviações</strong>: &lt;abbr title='nome completo'&gt;Abreviação&lt;/abbr&gt;<br>
+    <p><strong>ABREVIAÇÕES</strong>: &lt;abbr title='nome completo'&gt;Abreviação&lt;/abbr&gt;<br>
         Ex: <abbr title="World Wide Web">www</abbr> &lpar;Passe o mouse em cima do exemplo.&rpar;<br>
         Ex: <abbr title='São Paulo'>SP</abbr><br>
         Ex: <abbr title="Hypertext markup language">HTML</abbr>
     </p>
     <hr>
-    <p><strong>Endereços ou Contatos</strong>: &lt;address&gt&lt;/address&gt;<br>
+    <p><strong>ENDEREÇOS E CONTATOS</strong>: &lt;address&gt&lt;/address&gt;<br>
         Ex:
         <address>
             Escrito por: Miguel Tenório<br>
@@ -25,15 +30,14 @@
         </address>
     </p>
     <hr>
-    <p><strong>Formatar em negrito</strong>&lpar;bold&rpar;: &lt;strong&gt;&lt;/strong&gt;<br>
+    <p><strong>FORMATAR EM NEGRITO</strong>&lpar;bold&rpar;: &lt;strong&gt;&lt;/strong&gt;<br>
         Ex: Carlos <strong>Miguel Tenório</strong> Santos<br>
         Ex: <strong>Tenório</strong>, Miguel.<br>
         <abbr title="Observação">Obs</abbr>: Apesar da tag &lt;b&gt;&lt;/b&gt; demonstrar o mesmo efeito visual, a tag
-        'strong' tem valor semântico e
-        fica explícito em leitores de tela.
+        'strong' tem valor semântico e fica explícito em leitores de tela.
     </p>
     <hr>
-    <p><strong>Texto bidirecional</strong>: &lt;bdi&gt;&lt;/bdi&gt;<br>
+    <p><strong>TEXTO BIDIRECIONAL</strong>: &lt;bdi&gt;&lt;/bdi&gt;<br>
         Recebe um texto ou palavra que tenha uma direção diferente do contexto atual<br>
         Ex:<br>
         Usuário <bdi>Carlos</bdi>: 25 anos<br>
@@ -41,30 +45,32 @@
         Usuário <bdi>إيان</bdi>: 30 anos<br>
     </p>
     <hr>
-    <p><strong>Substituição bidirecional</strong>: &lt;bdo&gt;&lt;/bdo&gt;<br>
+    <p><strong>SUBSTITUIÇÃO BIDIRECIONAL</strong>: &lt;bdo&gt;&lt;/bdo&gt;<br>
         Modifica a direção de leitura de uma palavra ou frase:<br>
         Ex. sentido esquerda para direita: <bdo dir="ltr">Miguel Tenorio</bdo><br>
         Ex. sentido direita para esquerda: <bdo dir="rtl">Miguel Tenorio</bdo><br>
     </p>
     <hr>
-    <p><strong>Citação curta e longa</strong>:<br>
+    <p><strong>CITAÇÃO CURTA E LONGA</strong>:<br>
         Citação curta com apenas uma linha, usar &lt;q&gt;&lt;/q&gt;<br>
         Ex: <q>Browsers normally insert quotation marks around the quotation.</q><br>
         Citação longa, usar &lt;blockquote&gt;&lt;/blockquote&gt;<br>
-        Ex: <blockquote cite="a fonte de referência">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero earum quasi porro deleniti fuga rem hic commodi nostrum alias id soluta quaerat laudantium qui dolore, accusamus reprehenderit corrupti voluptatibus voluptates?</blockquote>
+        Ex: <blockquote cite="a fonte de referência">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+            earum quasi porro deleniti fuga rem hic commodi nostrum alias id soluta quaerat laudantium qui dolore,
+            accusamus reprehenderit corrupti voluptatibus voluptates?</blockquote>
     </p>
     <hr>
-    <p><strong>Destaque em título de trabalhos artistica/criativa</strong> &lt;cite&gt;&lt;/cite&gt;:<br>
+    <p><strong>DESTAQUE EM TÍTULOS DE TRABALHOS ARTISTICOS/CRIATIVOS</strong> &lt;cite&gt;&lt;/cite&gt;:<br>
         Ex: <cite>Mona Lisa</cite> de Leonardo Da Vinci de 1503.<br>
         Em volta do título da obra, o nome do artista não é título.
     </p>
     <hr>
-    <p><strong>Define a marcação como um código</strong>: &lt;code&gt;&lt;/code&gt;<br>
+    <p><strong>DEFINE A MARCAÇÃO COMO UM CÓDIGO</strong>: &lt;code&gt;&lt;/code&gt;<br>
         Ex: <q>Criando variável em JavaScript: <code>var</code> nome = Miguel.</q><br>
         A palavra <q>var</q>, foi marcada com a tag que refere-se a um código que no caso é do JavaScript.
     </p>
     <hr>
-    <p><strong>Riscando e inserindo palavras e frases</strong>: &lt;del&gt;&lt;/del&gt; e &lt;ins&gt;&lt;/ins&gt;<br>
+    <p><strong>DELETANDO E INSERINDO PALAVRAS E FRASES</strong>: &lt;del&gt;&lt;/del&gt; e &lt;ins&gt;&lt;/ins&gt;<br>
         Deletando palavra:<br>
         <del>Carlos Santos</del><br>
         Inserindo paravras:<br>
@@ -73,7 +79,26 @@
         O rato <del>roeu </del><ins>comeu</ins> a roupa do Rei <del>de Roma </del><ins>da França</ins>.
     </p>
     <hr>
-
+    <p><strong>MARCANDO FRASE A SER DEFINIDA</strong>: &lt;dfn&gt;&lt;/dfn&gt;<br>
+        <dfn title="Hypertext markup language">HTML</dfn> é uma linguagem de marcação.<br>
+        <dfn title="Cascading Style Sheets">CSS</dfn> é uma linguagem de estilização.<br>
+        <dfn title="JavaScript">JS</dfn> é uma linguagem de programação.<br>
+        <dfn title="Observação">Obs</dfn>: Parecida com a tag de abreviação, porém esta indica a definição de algo, de
+        um termo, etc.
+    </p>
+    <hr>
+    <p><strong>ENFATIZANDO PALAVRA OU FRASE</strong>: &lt;em&gt;&lt;/em&gt;<br>
+        Ex: Hoje em <em>São Paulo</em>, está muito <em>frio</em> e está um dia <em>super</em> tranquilo.<br>
+        <dfn title="Observação">Obs:</dfn> Apesar da tag &lt;i&gt;&lt;/i&gt; ter o mesmo efeito visual da tag
+        &lt;em&gt;&lt;/em&gt;, a tag de enfatizar tem mais valor semântico.
+    </p>
+    <hr>
+    <p><strong>INDICADA COMANDO DE ENTRADA DE TECLADO</strong>: &lt;kbd&gt;&lt;/kbd&gt;<br>
+        Ex: Para copiar use o comando <kbd>Ctrl</kbd> + <kbd>C</kbd> e depois para colar use <kbd>Ctrl</kbd> +
+        <kbd>V</kbd>.
+    </p>
+    <hr>
+    <p><strong></strong></p>
 </body>
 
 </html>
