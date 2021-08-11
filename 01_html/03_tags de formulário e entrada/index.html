@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>TAGS FORM AND INPUT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        form {
+            padding: 10px;
+            width: 350px;
+        }
+        input {
+            margin: 3px;
+        }
+
+        #botao{
+            background-color: green;
+            color: white;
+            margin: 5px auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- COMEÇAR UM FORMULÁRIO COM A TAG FORM -->
+    <form action="" method="">
+        <!--
+            PROPRIEDADES COMUNS DA TAG FORM:
+            action - define o local para onde o formulário é enviado.
+            method - define o método de envio do formulário: get e post.
+        -->
+
+        <!--
+            PROPRIEDADE TAG LABEL E INPUT:
+            A propriedade 'for' em label é o id da tag 'input'.
+            A propriedade 'type' em input define o tipo de entrada de dado.
+
+            Label beneficia a usuários que utilizam leitor de tela e também otimiza a seleção do campo, em regiões pequenas.
+        -->
+        <fieldset>
+            <legend>ÁREA DE ACESSO</legend>
+            <label for="nome"> NOME:<input type="text" id="nome"></label><br>
+            <label for="senha"> SENHA:</label><input type="password" name="senha" id="senha"><br>
+            <label for="lembrar">LEMBRAR ACESSO</label><input type="checkbox" name="lembrarSim" id="lembrarSim"><br>
+            <input type="button" value="ACESSAR" id="botao">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <p>
+        LINKS DE REFERENCIA NA W3SCHOOLS:<br>
+        <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">TAG FORM</a><br>
+        <a href="https://www.w3schools.com/tags/tag_label.asp" target="_blank">TAG LABEL</a><br>
+        <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">TAG INPUT</a><br>
+        <a href="https://www.w3schools.com/tags/tag_fieldset.asp" target="_blank">TAG FIELDSET</a><br>
+        <a href="https://www.w3schools.com/tags/tag_legend.asp" target="_blank">TAG LEGEND</a><br>
+        <a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank">TAG BUTTON</a><br>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+        <a href="" target="_blank"></a><br>
+    </p>
+
+    <script src=''></script>
+</body>
+
+</html>
