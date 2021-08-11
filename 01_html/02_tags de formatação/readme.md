@@ -38,10 +38,6 @@ Tag | Description
 <br>
 
 
-#### PELO CODEPEN
+#### [VEJA PELO CODEPEN](https://codepen.io/Miguel-HCJS/pen/GRmzJxv)
 
-![https://codepen.io/Miguel-HCJS/pen/GRmzJxv](https://lh5.googleusercontent.com/iA6XX08TUnQJg_NMCUcZZIc9ssd-gdiPOpJNy3I4aDwdcNrzZ9FEfrJCkiuwwUbYxfeWacYtKuyu32kvCG13OoQWR7c9B_-F2E8UF9SXQnN9uEXh29XA5hueDN4XNEpb5F-azgpV)
-
-### REFERENCIA
-
-![https://www.w3schools.com/tags/ref_byfunc.asp](https://myket.ir/app-icon/7422c824-9519-4544-90bb-d2b23cc3c835.png)
+#### [REFERENCIAS DA W3SCOOLS](https://www.w3schools.com/tags/ref_byfunc.asp)
