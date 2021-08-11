@@ -78,7 +78,8 @@
         <del>Carlos </del><ins>Miguel Tenorio</ins><del> Santos</del>
         Outro exemplo:<br>
         O rato <del>roeu </del><ins>comeu</ins> a roupa do Rei <del>de Roma </del><ins>da França</ins>.<br>
-        <dfn title="Observação">Obs</dfn>: A tag &lt;s&gt;&lt;/s&gt; demonstra o mesmo efeito visual da &lt;del&gt;&lt;/del&gt; porém não o mesmo efeito e semântica.
+        <dfn title="Observação">Obs</dfn>: A tag &lt;s&gt;&lt;/s&gt; demonstra o mesmo efeito visual da
+        &lt;del&gt;&lt;/del&gt; porém não o mesmo efeito e semântica.
     </p>
     <hr>
     <p><strong>MARCANDO FRASE A SER DEFINIDA</strong>: &lt;dfn&gt;&lt;/dfn&gt;<br>
@@ -106,7 +107,8 @@
     <hr>
     <p><strong>ESCALA MENSURÁVEL</strong>: &lt;meter&gt;&lt;/meter&gt;<br>
         <meter id="nony" value="150" min="0" max="500"></meter><br>
-        <dfn title="Observação">Obs</dfn>: Observar as propriedades no código, esta tag não indica um processo de progesso.
+        <dfn title="Observação">Obs</dfn>: Observar as propriedades no código, esta tag não indica um processo de
+        progesso.
     </p>
     <hr>
     <p><strong>TEXTO PRÉ-FORMATADO</strong>: &lt;pre&gt;&lt;/pre&gt;<br>
@@ -126,11 +128,12 @@
         <ruby>
             漢 <rt> ㄏㄢˋ </rt>
         </ruby><br>
-        <dfn title="Observação">Obs:</dfn> Usada em conjunto com outras duas tag: &lt;rt&gt;&lt;/rt&gt; e &lt;rp&gt;&lt;/rp&gt;<br>
+        <dfn title="Observação">Obs:</dfn> Usada em conjunto com outras duas tag: &lt;rt&gt;&lt;/rt&gt; e
+        &lt;rp&gt;&lt;/rp&gt;<br>
         <strong>EXPLICAÇÃO / PRONUNCIA</strong>: &lt;rt&gt;&lt;/rt&gt;<br>
         <strong>DEFINE O QUE MOSTRARÁ SE O NAVEGADOR NÃO SUPORTAR 'RUBY'</strong>: &lt;rp&gt;&lt;/rp&gt;<br>
         Ex:<br>
-    <pre>
+        <pre>
     &lt;ruby&gt;
     漢 &lt;rp&gt;&lpar;&lt;/rp&gt;&lt;rt&gt;ㄏㄢˋ&lt;/rt&gt;&lt;rp&gt;&rpar;&lt;/rp&gt;
     &lt;/ruby&gt;
@@ -142,11 +145,38 @@
     </p>
     <hr>
     <p><strong>TEXTO SUBSCRITO E SOBRESCRITO</strong>: &lt;sup&gt;&lt;/sup&gt; e &lt;sub&gt;&lt;/sub&gt;<br>
-        Ex:<br>
+        Ex: Observe o número 2<br>
         Sobrescrito: x<sup>2</sup> + 3 = 19<br>
         Subscrito: H<sub>2</sub>O
     </p>
     <hr>
+    <p><strong>CONTEÚDO OCULTO</strong>: &lt;template&gt;&lt;/template&gt;<br>
+        Ex: <br>
+        <button onclick="showContent()">Conteúdo oculto</button>
+        
+        <template>
+            <h2>Flower</h2>
+            <img src="img_white_flower.jpg" width="214" height="204">
+        </template>
+        <br>
+        <dfn title="Observação">Obs</dfn>: É melhor para a mesma finalidade propriedades CSS e conectar com funções em
+        JavaScript, veja a tag no código.
+    </p>
+    <hr>
+    <p><strong>DEFINEÇÃO DE TEMPO</strong>: &lt;time&gt;&lt;/time&gt;<br>
+        Ex: Nasci em <time datetime="1995-11-06 13:30">Novembro de 1995</time> as <time>10:30</time>.<br>
+        <dfn title="Observação">Obs</dfn>: A marcação ficou no horário, só não é visivel, porém esta marcação pode oferecer lembretes ao calendário do usuário, ou tornar mecanismos de pesquisa mais inteligentes.
+    </p>
+    <hr>
+    <p><strong>MARCAÇÃO DE VARIÁVEL</strong>: &lt;var&gt;&lt;/var&gt;<br>
+        Ex: <br>
+        Pode ser usada para marcar uma variável na programação ou em expressões matemáticas: <var>X</var> + <var>Y</var> = <var>Z</var>
+    </p>
+    <hr>
+    <p><strong>SUGESTÃO DE QUEBRA DE PALAVRAS</strong>: &lt;wbr&gt;&lt;/wbr&gt;<br>
+        Ex: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo assu<wbr>menda harum ex? Ali<wbr>quam distinc<wbr>tio al<wbr>ias omnis officia explicabo.<br>
+        <dfn title="Observação">Obs</dfn>: Ao reduzir o tamanho do browser, verá que algumas palavras são divididasno meio da palavra.
+    </p>
 </body>
 
 </html>
