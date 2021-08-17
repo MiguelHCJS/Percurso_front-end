@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Exemplo 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .login {
+            width: 250px;
+            height: 250px;
+            margin: 20px auto;
+        }
+
+        .login > fieldset {
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+            border: solid 1px blue;
+            border-radius: 5px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 255, 0.227);
+            background-color: rgba(0, 0, 130, 0.063);
+        }
+
+        fieldset > input {
+            margin: 15px;
+            background-color: rgba(0, 0, 255, 0.076);
+            border: 0px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        fieldset > p {
+            margin: 5px 0 10px 0;
+        }
+
+        .login fieldset > button {
+            padding: 5px;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        .login fieldset > button:hover {
+            background-color: rgba(0, 0, 255, 0.364);
+            padding: 5px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+
+        .comentarios {
+            width: 60%;
+            background-color: rgba(255, 166, 0, 0.508);
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .comentarios fieldset{
+            border: 0px;
+        }
+
+        textarea {
+            width: 100%;
+            text-align: justify;
+            text-indent: 3%;
+        }
+
+        .comentarios button {
+            width: 100%;
+            color: white;
+            background-color: rgba(255, 166, 0, 0.707);
+            border: 0px;
+            border-radius: 0 0 5px 5px;
+            padding: 5px;
+        }
+
+        .comentarios button:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+        <form action="" id="formAcesso" class="login">
+            <fieldset>
+                <p>ÁREA DE ACESSO</p>
+                <label for="login"></label><input type="text" name="login" id="login" placeholder='NOME'><br>
+                <label for="password"></label><input type="password" name="password" id="password" placeholder="SENHA"><br>
+                <button type="button">LOGIN</button>
+            </fieldset>
+        </form>
+        <hr>
+        <form action="" class="comentarios">
+            <fieldset>
+                <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
+                <button type="button">COMENTAR</button>
+            </fieldset>
+        </form>
+        <hr>
+        <form action="">
+
+        </form>
+
+
+</body>
+
+</html>
