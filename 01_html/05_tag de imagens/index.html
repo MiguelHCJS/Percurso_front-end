@@ -26,19 +26,27 @@
             left: 130px;
             top: 970px;
         }
+
+        pre {
+            margin: 0;
+            padding: 0;
+        }
     </style>
 
 </head>
 
 <body>
     <h2>TAG IMG - &lt;img&gt;&lt;/img&gt;</h2>
-    <p class="definicao">&lt;img src='<p class="detalhe">caminho para imagem</p>' alt='<p class="detalhe">texto
-            alternativo para exibição</p>'&gt;&lt;/img&gt;</p>
+    <pre>
+        <p class="definicao">&lt;img src='<p class="detalhe">caminho para imagem</p>' alt='<p class="detalhe">texto alternativo para exibição</p>'&gt;&lt;/img&gt;</p>
+    </pre>
     <p>IMAGEM EM UMA PASTA LOCAL</p>
     <img src="image/html.jpg" alt="figura de HTML em pasta local"><br>
     <p>IMAGEM DE LINK EXTERNO</p>
     <img src="https://i.ytimg.com/vi/rTOKBwtvMQw/maxresdefault.jpg" alt="figura de HTML em link externo">
+
     <hr>
+
     <h2>TAG MAP E AREA</h2>
     <pre>
     &lt;img src='<p class="detalhe">caminho para imagem</p>' alt='<p class="detalhe">texto alternativo para exibição</p>'&gt usemap='<p class="detalhe">#namemap</p>';
@@ -46,13 +54,47 @@
         &lt;area shape='<p class="detalhe">especifíca formato da area</p>' coords='<p class="detalhe">121,25,480,240</p>' alt='<p class="detalhe">texto alternativo</p>' href='<p class="detalhe">index.html</p>'&gt;
     &lt;/map&gt;</p>
     </pre>
-    <p>As coordenadas do exemplo, são referentes a imagem abaixo, ordem das coordenadas: x(horizontal), y(vertical), largura, altura.
+    <p>As coordenadas do exemplo, são referentes a imagem abaixo, ordem das coordenadas: x(horizontal), y(vertical),
+        largura, altura.
     </p>
     <img src="image/html-css-ou-javascript.jpg" alt="computador" usemap="#comp">
     <map name="comp" id='comp'>
         <area shape="rect" coords="121,25,480,240" href="index.html" alt="computador">
     </map>
+
     <hr>
+
+    <h2>TAG CANVAS</h2>
+    <p>Usada para desenhar gráficos via comandos JavaScript, contendo também outras possibilidades de desenhos.</p>
+    <pre>
+    &lt;canvas id='<p class="detalhe">identificador</p>' width='<p class="detalhe">largura</p>' height='<p class="detalhe">altura</p>'&gt;&lt;/canvas&gt;
+
+    Código em JavaScript, referente ao desenho abaixo:
+
+    var identificador = document.querySelector('#identificador');
+    var d = identificador.getContext('2d');
+    d.fillStyle = '#8a2be2';
+    d.fillRect(0,0,100,200);
+    d.fillStyle = '#ff0031';
+    d.fillRect(100,0,200,200)
+    d.fillStyle = '#6d31a5';
+    d.fillRect(300,0,200,200);
+    </pre>
+    <p>Esta é um tag bem ampla, com uma gama enorme de possibilidades, link de referencia da <a href="https://www.w3schools.com/graphics/canvas_intro.asp" target="_blank">W3Schools</a></p><br>
+
+    <canvas id='desenho' width="800" height="200"></canvas>
+    <hr>
+
+    <script>
+        var desenho = document.querySelector('#desenho');
+        var d = desenho.getContext('2d');
+        d.fillStyle = '#8a2be2';
+        d.fillRect(0, 0, 100, 200);
+        d.fillStyle = '#ff0031';
+        d.fillRect(100, 0, 200, 200)
+        d.fillStyle = '#6d31a5';
+        d.fillRect(300, 0, 200, 200);
+    </script>
 </body>
 
 </html>
