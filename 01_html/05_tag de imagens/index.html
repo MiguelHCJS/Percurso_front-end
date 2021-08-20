@@ -81,8 +81,8 @@
     d.fillRect(300,0,200,200);
     </pre>
     <p>Esta é um tag bem ampla, com uma gama enorme de possibilidades, link de referencia da <a href="https://www.w3schools.com/graphics/canvas_intro.asp" target="_blank">W3Schools</a></p><br>
-
     <canvas id='desenho' width="800" height="200"></canvas>
+    
     <hr>
 
     <h2>TAG FIGURE E FIGCAPTION</h2>
@@ -98,8 +98,26 @@
         <img src="image/istockphoto-1169395451-612x612.jpg" alt="front-end">
         <figcaption>Desenvolvimento front-end</figcaption>
     </figure>
+    
     <hr>
 
+    <h2>TAG PICTURE</h2>
+    <p>Proporciona mais flexibilidade mediante a dimensão da tela, podendo definir mais de uma imagem em diversas dimensões.</p>
+    <pre>
+    &lt;picture&gt;
+        &lt;source media='<p class="detalhe">podendo definir uma largura, máxima ou mínima</p>' srcset='<p class="detalhe">local da imagem</p>'&gt;
+        &lt;source media='' srcset=''&gt;
+        &lt;img src='' alt=''&gt;
+    &lt;/picture&gt;
+    </pre>
+    <p>A tag 'img' será a padrão em caso de uma dimensão não especificada nas outras.</p>
+    <picture>
+        <source media="(min-width:800px)" srcset="./image/800.jpg">
+        <source media="(min-width:600px)" srcset="./image/600.jpg">
+        <img src="image/padrao.png" alt="Azul">
+    </picture>
+
+    <hr>
     <script>
         var desenho = document.querySelector('#desenho');
         var d = desenho.getContext('2d');
