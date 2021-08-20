@@ -85,6 +85,21 @@
     <canvas id='desenho' width="800" height="200"></canvas>
     <hr>
 
+    <h2>TAG FIGURE E FIGCAPTION</h2>
+    <p>A tag 'figure' é usada para definir uma área que pode conter ilustrações, fotos, diagramas e etc.</p>
+    <p>A tag 'figcaption' define uma legenda para o que foi inserido na tag 'figure'</p>
+    <pre>
+    &lt;figure&gt;
+        &lt;img src='<p class="detalhe">local da imagem</p>' alt='<p class="detalhe">texto alternativo</p>'&gt;
+        &lt;figcaption&gt;<p class="detalhe">legenda da imagem</p>&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    </pre>
+    <figure>
+        <img src="image/istockphoto-1169395451-612x612.jpg" alt="front-end">
+        <figcaption>Desenvolvimento front-end</figcaption>
+    </figure>
+    <hr>
+
     <script>
         var desenho = document.querySelector('#desenho');
         var d = desenho.getContext('2d');
