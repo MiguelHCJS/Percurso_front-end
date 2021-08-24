@@ -17,7 +17,7 @@
 <body>
     <h2>TAG DE ÁUDIO</h2>
     <P>
-        Há algumas recomendações para formatos de media de áudio na <a href="https://www.w3schools.com/tags/tag_audio.asp">W3Schools</a>.<br>
+        Há algumas recomendações para formatos de media de áudio na <a href="https://www.w3schools.com/tags/tag_audio.asp" target="_blank">W3Schools</a>.<br>
         Nesta postagem, usarei media mp3:
     </P>
     <pre>
@@ -47,21 +47,34 @@
     &lt;audio controls&gt;
         &lt;source src="dog.ogg" type="audio/ogg"&gt;
         &lt;source src="dog.mp3" type="audio/mpeg"&gt;
+        Áudio não suportado pelo navegador.
     &lt;/audio&gt;
     </pre>
-    <p>A tag 'track' é usada para especificar legendas, arquivos de legenda ou outros arquivos que contenham texto, segundo a <a href="https://www.w3schools.com/tags/tag_track.asp">W3Schools</a>:</p>
+    <p>A tag 'track' é usada para especificar legendas, arquivos de legenda ou outros arquivos que contenham texto, segundo a <a href="https://www.w3schools.com/tags/tag_track.asp" target="_blank">W3Schools</a>:</p>
     <pre>
-        &lt;video width="" height="" controls&gt;
-            &lt;source src="forest.mp4" type="video/mp4"&gt;
-            &lt;source src="forest.ogg" type="video/ogg"&gt;
-            &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
-            &lt;track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
-        &lt;/video&gt;
+    &lt;video width="" height="" controls&gt;
+        &lt;source src="forest.mp4" type="video/mp4"&gt;
+        &lt;source src="forest.ogg" type="video/ogg"&gt;
+        &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+        &lt;track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
+    &lt;/video&gt;
     </pre>
 
     <hr>
 
-    <script src=''></script>
+    <h2>TAG DE VIDEO</h2>
+    <p>Define um conteúdo de vídeo, que também pode ser usada a tag 'source' para especificar várias medias para o mesmo elemento de vídeo:</p>
+    <pre>
+    &lt;video width="" height="" controls&gt;
+        &lt;source src="movie.mp4" type="video/mp4"&gt;
+        &lt;source src="movie.ogg" type="video/ogg"&gt;
+        Vídeo não suportado pelo navegador.
+    &lt;/video&gt;
+    </pre>
+    <p>Mais detalhes na <a href="https://www.w3schools.com/tags/tag_video.asp" target="_blank">W3Schools</a>.</p>
+
+    <hr>
+
 </body>
 
 </html>
