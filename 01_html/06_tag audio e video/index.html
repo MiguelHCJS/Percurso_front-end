@@ -7,11 +7,17 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Tag audio e video</title>
     <link rel='stylesheet' href=''>
+    <style>
+        body {
+            padding: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
     <h2>TAG DE ÁUDIO</h2>
-    <P>Há algumas recomendações para formatos de media de áudio na <a href="https://www.w3schools.com/tags/tag_audio.asp">W3Schools</a>.<br>
+    <P>
+        Há algumas recomendações para formatos de media de áudio na <a href="https://www.w3schools.com/tags/tag_audio.asp">W3Schools</a>.<br>
         Nesta postagem, usarei media mp3:
     </P>
     <pre>
@@ -32,6 +38,27 @@
         Existe outros atribulos que podem ser colocados na tag 'audio', no exemplo acima apenas foi atribuido 'controls', servindo para<br>
         como o nome já diz, por botões de controle na media.
     </p>
+
+    <hr>
+    
+    <h2>TAG SOURCE E TRACK</h2>
+    <p>A tag 'source' como já explícita acima, serve para selecionar várias medias, para um elemento de media &lt;audio&gt; ou &lt;video&gt;:</p>
+    <pre>
+    &lt;audio controls&gt;
+        &lt;source src="dog.ogg" type="audio/ogg"&gt;
+        &lt;source src="dog.mp3" type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+    </pre>
+    <p>A tag 'track' é usada para especificar legendas, arquivos de legenda ou outros arquivos que contenham texto, segundo a <a href="https://www.w3schools.com/tags/tag_track.asp">W3Schools</a>:</p>
+    <pre>
+        &lt;video width="" height="" controls&gt;
+            &lt;source src="forest.mp4" type="video/mp4"&gt;
+            &lt;source src="forest.ogg" type="video/ogg"&gt;
+            &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+            &lt;track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
+        &lt;/video&gt;
+    </pre>
+
     <hr>
 
     <script src=''></script>
