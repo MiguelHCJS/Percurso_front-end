@@ -6,7 +6,29 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>TAG DE LINKS</title>
-    <link rel='stylesheet' href=''>
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        p.descritivo {
+            display: inline;
+            color: red;
+        }
+
+        .edit {
+            line-height: 25px;
+        }
+        .edit a {
+            margin: 5px;
+            text-decoration: none;
+            color: blue;
+            font-size: 1.1em;
+            background-color: rgba(36, 128, 0, 0.445);
+            padding: 3px 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,14 +37,22 @@
     <pre>
     &lt;a href='https://www.w3schools.com/default.asp'&gt;W3Schools&lt;a&gt;
 
-    Resultado: <a href="https://www.w3schools.com/default.asp">W3Schools</a>
+    - Resultado: <a href="https://www.w3schools.com/default.asp">W3Schools</a>
 
-    Resultado com o atributo para abrir em uma nova aba: <a href="https://www.w3schools.com/default.asp" target='_blank'>w3schools</a>
+    - Resultado com o atributo para abrir em uma nova aba: <a href="https://www.w3schools.com/default.asp" target='_blank'>w3schools</a>
     </pre>
 
     <hr>
 
-    <script src=''></script>
+    <h2>TAG LINK</h2>
+    <p>Usada para vincular página com recursos externos, folhas de estilo, sendo uma tag sem fechamento contendo apenas atributos:</p>
+    <pre>
+    &lt;a rel='<p class="descritivo">tipo de relacionamento do link</p>' href='<p class="descritivo">link para o recurso externo</p>'&gt;
+
+    - Exemplo link a folha de estilo: &lt;link rel="stylesheet" href="style.css"&gt;
+    </pre>
+
+    <hr>
 </body>
 
 </html>
