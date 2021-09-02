@@ -7,9 +7,60 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>TAGS DE TABELA</title>
     <link rel='stylesheet' href=''>
+    <style>
+        table, caption {
+            border: 1px solid black;
+            width: 300px;
+            text-align: center;
+        }
+
+        th, td{
+            border: 1px dotted black;
+        }
+
+    </style>
 </head>
 
 <body>
+    <h2>TAG TABLE, CAPTION, TR, TH E TD</h2>
+    <ul>
+        <li>A tag 'table' define a área da tabela, ela que engloba as demais relacionadas a tabela.</li>
+        <li>A tag 'caption' define a legenda&lpar;título&rpar; ou assunto da table.</li>
+        <li>A tag 'tr' define a linha em uma tabela, a linha horizontal.</li>
+        <li>A tag 'th' define o cabeçalho da coluna dos dados subsequentes.</li>
+        <li>A tag 'td' define uma celula.</li>
+    </ul>
+    <pre>
+    &lt;table&gt;
+        &lt;caption&gt;Dados de cadastro&lt;/caption&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nome&lt;/th&gt;
+            &lt;th&gt;Sobrenome&lt;/th&gt;
+            &lt;th&gt;Idade&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Miguel&lt;/td&gt;
+            &lt;td&gt;Tenorio&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+    <p>Exemplo da estrutura acima, com pouca aplicação de CSS para melhor visualização:</p>
+    <table>
+        <caption>Dados de cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Miguel</td>
+            <td>Tenorio</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <hr>
 
 
     <script src=''></script>
