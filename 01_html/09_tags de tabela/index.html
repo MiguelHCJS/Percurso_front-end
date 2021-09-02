@@ -17,7 +17,6 @@
         th, td{
             border: 1px dotted black;
         }
-
     </style>
 </head>
 
@@ -62,7 +61,84 @@
 
     <hr>
 
+    <h2>TAG THEAD, TBODY E TFOOT</h2>
+    <p>
+        <ul>
+            <li>A tag 'thead' define a área de cabeçalho em uma tabela.</li>
+            <li>A tag 'tbody' define a área de corpo da table.</li>
+            <li>A tag 'tfoot' define o rodapé da tabela.</li>
+        </ul>
+    </p>
+    <pre>
+    &lt;table&gt;
+        &lt;caption&gt;Dados de cadastro&lt;/caption&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Nome&lt;/th&gt;
+                &lt;th&gt;Sobrenome&lt;/th&gt;
+                &lt;th&gt;Idade&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Miguel&lt;/td&gt;
+                &lt;td&gt;Tenorio&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Carlos&lt;/td&gt;
+                &lt;td&gt;Santos&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Total&lt;/th&gt;
+                &lt;th colspan='2'&gt;Idade média&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td colspan='2'&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;
+    </pre>
+    <table>
+        <caption>Dados de cadastro</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Miguel</td>
+                <td>Tenorio</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Santos</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th colspan='2'>Idade média</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan='2'>25</td>
+            </tr>
+        </tfoot>
+    </table>
 
+    <hr>
+
+    
     <script src=''></script>
 </body>
 
