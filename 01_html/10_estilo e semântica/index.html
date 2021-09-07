@@ -7,12 +7,52 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>TAGS DE ESTILO E SEMÂNTICA</title>
     <link rel='stylesheet' href=''>
+    <style>
+        .destaque{
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
+    <h2>ESTILIZANDO TAGS EM HTML</h2>
+    <p>A linguagem de estilização, mais conhecida como CSS&lpar;Cascading style sheet&rpar; é usada para estilizar as tags em HTML, sendo possível conectar o arquivo de estilização de três formas:<br></p>
+    <ul style="list-style: decimal;">
+        <li>Diretamente na tag</li>
+        <li>No 'head' do arquivo index, usando a tag 'style'</li>
+        <li>Externo em um arquivo CSS</li>
+    </ul>
+    <pre>
+    1. A forma direta na tag, é como usei acima:
 
+        &lt;ul <span class='destaque'>style="list-style: decimal;"</span>&gt;
+            &lt;li&gt;Diretamente na tag&lt;/li&gt;
+            &lt;li&gt;No 'head' do arquivo index, usando a tag 'style'&lt;/li&gt;
+            &lt;li&gt;Externo em um arquivo CSS&lt;/li&gt;
+        &lt;/ul&gt;
+
+    2. Usando a tag 'style' na tag 'head' do index, onde fica as "configurações" do arquivo:
+
+        &lt;head&gt;
+            &lt;meta charset='UTF-8'&gt;
+            &lt;title&gt;Link interno de estilo&lt;/title&gt;<span class="destaque">
+                &lt;style&gt;
+                    p { color: red;
+                    }
+                &lt;/style&gt;</span>
+        &lt;/head&gt;
+    
+    3. Link externo, também sendo necessário uma tag no 'head', para indicar qual arquivo será usado:
+
+        &lt;head&gt;
+            &lt;meta charset='UTF-8'&gt;
+            &lt;title&gt;Link interno de estilo&lt;/title&gt;<span class="destaque">
+            &lt;link rel='stylesheet' href='definir local e arquivo de estilização'&gt;</span>
+        &lt;/head&gt;
+    </pre>
+    <hr>
 
     <script src=''></script>
 </body>
 
-</html>
+</html>     
