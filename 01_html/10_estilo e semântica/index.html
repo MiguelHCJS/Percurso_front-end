@@ -11,13 +11,76 @@
         .destaque{
             color: red;
         }
+
+        .ulDecimal {
+            list-style: decimal;
+        }
+
+        .pagina {
+            height: 500px;
+            width: 600px;
+            background-color: gray;
+            position: relative;
+            text-align: center;
+            line-height: 150px;
+            text-transform: uppercase;
+        }
+
+        .sec1 {
+            height: 200px;
+            width: 400px;
+            background-color: bisque;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+
+        .sec2 {
+            height: 200px;
+            width: 400px;
+            background-color: bisque;
+            position: absolute;
+            top: 240px;
+            left: 60px;
+        }
+
+        .art1 {
+            height: 150px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .art2 {
+            height: 150px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            top: 180px;
+            right: 20px;
+        }
+
+        .asi {
+            background-color: yellowgreen;
+            height: 450px;
+            width: 35px;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+
+        aside > p {
+            transform: rotate(90deg);
+        }
     </style>
 </head>
 
 <body>
     <h2>ESTILIZANDO TAGS EM HTML</h2>
     <p>A linguagem de estilização, mais conhecida como CSS&lpar;Cascading style sheet&rpar; é usada para estilizar as tags em HTML, sendo possível conectar o arquivo de estilização de três formas:<br></p>
-    <ul style="list-style: decimal;">
+    <ul class="ulDecimal">
         <li>Diretamente na tag</li>
         <li>No 'head' do arquivo index, usando a tag 'style'</li>
         <li>Externo em um arquivo CSS</li>
@@ -64,7 +127,7 @@
     <hr>
     <h2>TAG HEADER, MAIN E FOOTER</h2>
     <p>As tags 'header', 'main' e 'footer' vieram para dar um valor mais semantico para a estrutura do arquivo HTML:</p>
-    <ul style="list-style: decimal;">
+    <ul class="ulDecimal">
         <li>header define o cabeçalho da página</li>
         <li>main define o conteúdo principal da página</li>
         <li>footer define o rodapé da página</li>
@@ -81,6 +144,19 @@
     &lt;/footer&gt;
     </pre>
     <hr>
+    <h2>TAGS SECTION, ARTICLE E ASIDE</h2>
+    <ul class="ulDecimal">
+        <li>A tag 'section' define uma seção no HTML, de forma que é mais semantico que usar um 'div'.</li>
+        <li>A tag 'article' define uma parte no HTML que de certa forma é independente do assunto em questão.</li>
+        <li>A tag 'aside' define um conteúdo lateral, geralmente como um menu lateral.</li>
+    </ul>
+    <div class="pagina">
+        <section class="sec1">Seção</section>
+        <section class="sec2">Seção</section>
+        <article class="art1">Artigo</article>
+        <article class="art2">Artigo</article>
+        <aside class="asi"><p>Menu</p></aside>
+    </div>
 </body>
 
 </html>     
