@@ -74,6 +74,10 @@
         aside > p {
             transform: rotate(90deg);
         }
+
+        dialog {
+            position: relative;
+        }
     </style>
 </head>
 
@@ -159,7 +163,9 @@
     </div>
     <hr>
     <h2>TAG DETAILS E SUMMARY</h2>
-    <p>A tag 'details' é utilizada para adicionar detalhes adicionais sobre algo, no qual este detalhe pode ser, ocultado e exibido sob demanda do usuário.</p><br>
+    <p>A tag 'details' é utilizada para adicionar detalhes adicionais sobre algo, no qual este detalhe pode ser, ocultado e exibido sob demanda do usuário.<br>
+    A tag 'summary' para definir um cabeçalho para 'details'.
+    </p><br>
     <pre>
     &lt;details&gt;
         &lt;summary&gt;PRATICA DE TAGS&lt;/summary&gt;
@@ -172,7 +178,14 @@
         <p>Ao completar as informações sobre as tags HTML segundo a listagem da W3Schools, partirei para a prática junto ao CSS.</p>
     </details>
     <hr>
-
+    <h2>TAG DIALOG</h2>
+    <p>Esta tag define uma caixa de diálogo, como por exemplo uma caixa de chat.</p>
+    <pre>
+    &lt;dialog <span class="destaque">open</span>&gt;Caixa de diálogo&lt;/dialog&gt;
+    </pre>
+    <p>O atributo 'open', serve para ativar a caixa de diálogo:</p>
+    <dialog open>Caixa de diálogo</dialog>
+    <hr>
 </body>
 
 </html>     
