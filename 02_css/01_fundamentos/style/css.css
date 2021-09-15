@@ -1,0 +1,68 @@
+main {
+    width: 1000px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    text-indent: 3%;
+}
+
+pre {
+    background-color: rgba(128, 128, 128, 0.11);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.regra {
+    border: 1px solid red;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.r {
+    color: red;
+}
+
+.seletor {
+    border: 1px solid blue;
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 1px;
+}
+
+.s {
+    color: blue;
+}
+
+.declaracao {
+    border: 1px solid purple;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 1px;
+}
+
+.d {
+    color: purple;
+}
+
+.propriedade {
+    border: 1px solid green;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.p {
+    color: green;
+}
+
+.valor {
+    border: 1px solid orange;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.v {
+    color: orange;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>FUNDAMENTOS CSS</title>
+    <link rel='stylesheet' href='style/css.css'>
+</head>
+
+<body>
+    <main>
+        <h1>Regras CSS</h1>
+        <p>CSS é a abreviação do termo em inglês Cascading style sheet, traduzindo seria folha de estilo em cascata. É um mecanismo que aplica estilo aos documentos web, como modificar fontes, cores, tamanhos e etc...</p>
+        <pre>
+
+            Regra CSS
+
+            <span class="regra"><span class="seletor">seletor</span><span class="declaracao"> { <span class="propriedade">propriedade</span>: <span class="valor">valor</span>; }</span></span>
+
+            <span class="r">&#2011;</span> regra 
+            <span class="s">&#2011;</span> seletor: é o alvo da regra CSS
+            <span class="d">&#2011;</span> declaração: parâmetros de estilização (propriedade e valor)
+            <span class="p">&#2011;</span> propriedade: define a caracteristica do seletor que será estilizada
+            <span class="v">&#2011;</span> valor: é a quantificação ou qualificação da propriedade
+        </pre>
+
+        <p>A regra pode ser usada toda em uma linha:</p>
+        <pre>
+
+            seletor { color: red; font-size: 16px; width: 200px;}
+        </pre>
+        <p>Ou cada uma em sua linha:</p>
+        <pre>
+
+            seletor {
+                color: red;
+                font-size: 16px;
+                width: 200px;
+            }
+        </pre>
+        <p>É apenas uma questão de torná-la mais legível e organizada, usar cada uma em sua linha. Quando o valor de uma propriedade for uma palavra composta, separada por espaço, usa-se &lpar;" "&rpar; ou &lpar;' '&rpar;:</p>
+        <pre>
+
+            seletor {
+                font-family: "courier new";
+            }
+
+            seletor {
+                font-family: 'courier new';
+            }
+        </pre>
+        <p>Espaços multiplos serão tratados como espaços simples:</p>
+        <pre>
+
+            seletor { border:   1px  solid      red;}
+            
+            Assim sendo
+
+            seletor { border: 1px solid red;}
+        </pre>
+        <p>Assim como não é sensível ao tamanho da caixa das fontes&lpar;maiúsculas e minúsculas&rpar;, resultará no mesmo efeito:</p>
+        <pre>
+
+            SELETOR { BORDER: 1PX SOLID RED;}
+        </pre>
+        <p>Os comentários dentro do arquivo CSS é utilizado as marcações: <br>- inicio do comentário: /* <br>- fim do comentário: */ <br> - /* comentário */</p>
+    </main>
+
+    <script src=''></script>
+</body>
+
+</html>
