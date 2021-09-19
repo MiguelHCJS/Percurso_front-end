@@ -12,7 +12,8 @@
 <body>
     <main>
         <h1>Regras CSS</h1>
-        <p>CSS é a abreviação do termo em inglês Cascading style sheet, traduzindo seria folha de estilo em cascata. É um mecanismo que aplica estilo aos documentos web, como modificar fontes, cores, tamanhos e etc...</p>
+        <p>CSS é a abreviação do termo em inglês Cascading style sheet, traduzindo seria folha de estilo em cascata. É
+            um mecanismo que aplica estilo aos documentos web, como modificar fontes, cores, tamanhos e etc...</p>
         <pre>
 
             Regra CSS
@@ -40,7 +41,8 @@
                 width: 200px;
             }
         </pre>
-        <p>É apenas uma questão de torná-la mais legível e organizada, usar cada uma em sua linha. Quando o valor de uma propriedade for uma palavra composta, separada por espaço, usa-se &lpar;" "&rpar; ou &lpar;' '&rpar;:</p>
+        <p>É apenas uma questão de torná-la mais legível e organizada, usar cada uma em sua linha. Quando o valor de uma
+            propriedade for uma palavra composta, separada por espaço, usa-se &lpar;" "&rpar; ou &lpar;' '&rpar;:</p>
         <pre>
 
             seletor {
@@ -60,12 +62,78 @@
 
             seletor { border: 1px solid red;}
         </pre>
-        <p>Assim como não é sensível ao tamanho da caixa das fontes&lpar;maiúsculas e minúsculas&rpar;, resultará no mesmo efeito:</p>
+        <p>Assim como não é sensível ao tamanho da caixa das fontes&lpar;maiúsculas e minúsculas&rpar;, resultará no
+            mesmo efeito:</p>
         <pre>
 
             SELETOR { BORDER: 1PX SOLID RED;}
         </pre>
-        <p>Os comentários dentro do arquivo CSS é utilizado as marcações: <br>- inicio do comentário: /* <br>- fim do comentário: */ <br> - /* comentário */</p>
+        <p>Os comentários dentro do arquivo CSS é utilizado as marcações: <br>- inicio do comentário: /* <br>- fim do
+            comentário: */ <br> - /* comentário */</p>
+
+        <h2>UNIDADES DE MEDIDA</h2>
+        <h4>COMPRIMENTO</h4>
+        <p>Diz respeito às medidas vertical e horizontal, na qual pode ser declarada de diversas formas, e se em caso de
+            valor 0, não há a necessidade de especificar o tipo de medida usada.</p>
+
+        <h4>MEDIDA RELATIVA</h4>
+        <p>São as medidas que tomam seu valor com base em outra medida de referência, sendo possível sua escalonagem
+            para dispositivos diferentes:</p>
+        <p>Alguns exemplos:</p>
+        <table>
+            <tr>
+                <th>UNIDADE</th>
+                <th>DEFINIÇÃO</th>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>relativa a font-size padrão do elemento, ou elemento-pai.</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>referente ao dispositivo de renderização&lpar;onde está sendo visualizado o elemento&rpar;</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>referente à largura do viewport</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>referente à altura do viewport</td>
+            </tr>
+        </table>
+
+        <h4>MEDIDA ABSOLUTA</h4>
+        <p>São medidas que os valores especificados são fixos, útil quando se está focada em uma medida de dispositivo
+            especifico.</p>
+        <p>Alguns exemplos:</p>
+        <table>
+            <tr>
+                <th>UNIDADE</th>
+                <th>DEFINIÇÃO</th>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td>milímetro</td>
+            </tr>
+            <tr>
+                <td>cm</td>
+                <td>centímetro</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>polegada, 1 polegada = 2,54 cm</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>pixel, 1px = 1/96polegada</td>
+            </tr>
+        </table>
+
+        <h4>PORCENTAGEM</h4>
+        <p>É uma medida que toma outra de referencia do elemento ancestral, elemento pai, declarado com valor seguido de %: width: 50%;</p>
+
+        <p>Outras unidades de medida(ângulo, hora, frequência e resolução) e o complemento das anteriores, no site do <a href="https://www.maujor.com/tutorial/unidades-de-medidas-css.php" target="_blank">MAUJOR</a>.</p>
     </main>
 
     <script src=''></script>
