@@ -71,6 +71,8 @@
         <p>Os comentários dentro do arquivo CSS é utilizado as marcações: <br>- inicio do comentário: /* <br>- fim do
             comentário: */ <br> - /* comentário */</p>
 
+            <hr>
+
         <h2>UNIDADES DE MEDIDA</h2>
         <h4>COMPRIMENTO</h4>
         <p>Diz respeito às medidas vertical e horizontal, na qual pode ser declarada de diversas formas, e se em caso de
@@ -135,6 +137,8 @@
 
         <p>Outras unidades de medida(ângulo, hora, frequência e resolução) e o complemento das anteriores, no site do <a href="https://www.maujor.com/tutorial/unidades-de-medidas-css.php" target="_blank">MAUJOR</a>.</p>
 
+        <hr>
+
         <h2>VINCULANDO FOLHA DE ESTILO NO DOCUMENTO</h2>
         <p>
             Três formas de se fazer este vinculo ao estilo, são eles:
@@ -170,6 +174,49 @@
             &lt;link rel='stylesheet' href='<span class="destaque">local do arquivo CSS</span>'&gt;
         </pre>
         <p>E em uma folha de estilo externa, a declaração será mais objetiva para as regras CSS, usando os diversos tipos de seletores.</p>
+    
+        <hr>
+
+        <h2>SELETORES SIMPLES NO CSS</h2>
+        <p>Existe diversas formas de selecionar um elemento via CSS, para que seja aplicada regras de estilização, algumas seleções simples, são:</p>
+        <pre>
+
+            - POR ELEMENTO
+
+            p {
+                <span class="destaque"> regras CSS para todos os paragrafos</span>
+            }
+
+            - ELEMENTOS MULTIPLOS
+
+            p, h1, h2 {
+                <span class="destaque"> regras CSS para todos os paragrafos</span>
+            }
+
+            - POR CLASSE
+
+            .destaque {
+                <span class="destaque"> regras CSS para todos os paragrafos</span>
+            }
+
+            - ELMENTOS COM UMA CLASSE ESPECÍFICA:
+
+            p.destaque {
+                <span class="destaque"> regras CSS para todos os paragrafos</span>
+            }
+
+            - POR IDENTIFICADOR (ID)
+
+            #destaque {
+                <span class="destaque"> regras CSS para todos os paragrafos</span>
+            }
+
+            - SELETOR DE TODOS OS ELEMENTOS
+
+            * {
+                <span class="destaque"> regras CSS para todos os paragrafos</span>
+            }
+        </pre>
     </main>
 
     <script src=''></script>
