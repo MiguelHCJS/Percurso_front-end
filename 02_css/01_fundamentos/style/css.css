@@ -11,12 +11,12 @@ main {
     padding: 15px;
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
-    text-indent: 3%;
 }
 
 p {
     margin: 15px 0;
     font-size: 1.1em;
+    text-indent: 3%;
 }
 
 h1, h2, h3, h4 {
@@ -100,4 +100,8 @@ th {
 
 th, td {
     padding: 5px;
+}
+
+.destaque {
+    color: red;
 }

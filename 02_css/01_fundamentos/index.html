@@ -134,6 +134,42 @@
         <p>É uma medida que toma outra de referencia do elemento ancestral, elemento pai, declarado com valor seguido de %: width: 50%;</p>
 
         <p>Outras unidades de medida(ângulo, hora, frequência e resolução) e o complemento das anteriores, no site do <a href="https://www.maujor.com/tutorial/unidades-de-medidas-css.php" target="_blank">MAUJOR</a>.</p>
+
+        <h2>VINCULANDO FOLHA DE ESTILO NO DOCUMENTO</h2>
+        <p>
+            Três formas de se fazer este vinculo ao estilo, são eles:
+        </p>
+
+        <h4>Estilo inline</h4>
+        <p>Este modo, é colocado as declarações direto em uma tag HTML:</p>
+        <pre>
+
+            &lt;p <span class="destaque">style='width: 100px; color: red;'</span>&gt;inline&lt;/p&gt;
+        </pre>
+        <p>Este tipo de declaração dificulta a manutenção, retirando também a capacidade do CSS de ter um controle centralizado das mudanças.</p>
+
+        <h4>Estilos incorporados</h4>
+        <p>É declarado o estilo em uma tag 'style' que fica no próprio documento na tag 'head':</p>
+        <pre>
+
+        &lt;head&gt;
+            &lt;meta charset='UTF-8'&gt;
+            &lt;title&gt;Estilo incorporado&lt;/title&gt;
+            &lt;style&gt;<span class="destaque">
+                width: 100px;
+                color: red;</span>
+            &lt;/style&gt;
+        &lt;head&gt;
+        </pre>
+        <p>Nessa declaração, melhorasse a localização da estilização, porém ainda não resolve a questão do controle centralizado.</p>
+
+        <h4>Estilos externos</h4>
+        <p>Para vincular uma folha de estilo externa é preciso por o elemento 'link' na parte do 'head', da seguinte maneira:</p>
+        <pre>
+
+            &lt;link rel='stylesheet' href='<span class="destaque">local do arquivo CSS</span>'&gt;
+        </pre>
+        <p>E em uma folha de estilo externa, a declaração será mais objetiva para as regras CSS, usando os diversos tipos de seletores.</p>
     </main>
 
     <script src=''></script>
