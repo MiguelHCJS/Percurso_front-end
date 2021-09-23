@@ -217,6 +217,21 @@
                 <span class="destaque"> regras CSS para todos os paragrafos</span>
             }
         </pre>
+
+        <hr>
+
+        <h2>ORDEM EM CASCATA DO ESTILO CSS</h2>
+        <p>Quando houver mais de um estilo específico para um elemento HTML, a seguinte ordem é obedecida na leitura:</p>
+        <ol>
+            <li>Estilo inline</li>
+            <li>Estilo embutido</li>
+            <li>Estilo externo</li>
+            <li>padrão do navegador</li>
+        </ol>
+        <p>
+            Sendo o número 1, o de maior prioridade, ou seja: <br>
+            Lerá a regra inline e se não houver, lerá a regra que estiver no 'style' da tag 'head' e se não encontrar nada, vai ler a folha externa e se não houver nenhuma dessas, seguirá o padrão do navegador.
+        </p>
     </main>
 
     <script src=''></script>
