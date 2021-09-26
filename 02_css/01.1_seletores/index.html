@@ -5,7 +5,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title></title>
+    <title>SELETORES</title>
     <link rel='stylesheet' href='style/css.css'>
 </head>
 
@@ -14,15 +14,13 @@
         
         <h1>SELETORES CSS</h1>
         <p>São as formas que podemos selecionar(encontrar) os elementos que vamos estilizar, na qual podemos dividir em algumas categorias:</p>
-        <p>
-            <ul>
-                <li>Seletores simples(seleciona pelo nome, id ou classe)</li>
-                <li>Seletores combinados(seleciona com base na relação entre os elementos)</li>
-                <li>Seletores de pseudoclasse(Seleciona por um determinado estado)</li>
-                <li>Seletores de pseudoelementos(Seleciona e estiliza parte de um elemento)</li>
-                <li>Seletores de atributo(Seleciona com base no atributo ou seu valor)</li>
-            </ul>
-        </p>
+        <ul>
+            <li>Seletores simples(seleciona pelo nome, id ou classe)</li>
+            <li>Seletores combinados(seleciona com base na relação entre os elementos)</li>
+            <li>Seletores de pseudoclasse(Seleciona por um determinado estado)</li>
+            <li>Seletores de pseudoelementos(Seleciona e estiliza parte de um elemento)</li>
+            <li>Seletores de atributo(Seleciona com base no atributo ou seu valor)</li>
+        </ul>
         <details><summary><h3 id="ss">SELETORES SIMPLES</h3></summary>
         <p>Selecionar um elemento com base em seu <strong>nome</strong>, por exemplo:</p>
         <pre>
@@ -82,7 +80,7 @@
     <a href="#ss" class="retorno">&#8634;</a>
         </details>
         <hr>
-        <details><summary><h3 class="sc">SELETORES COMBINADOS</h3></summary>
+        <details><summary><h3 id="sc">SELETORES COMBINADOS</h3></summary>
         <p>É o tipo de seletor que determina uma relação entre os seletores:</p>
         <ul>
             <li>Seletor descendente (espaço)</li>
@@ -178,8 +176,77 @@
         </pre>
         <a href="#sc" class="retorno">&#8634;</a>
         </details>
+        <hr>
+        <details><summary><h3 id="spc">SELETORES DE PSEUDOCLASSE</h3></summary>
+            <p>Usado para definir um estado especial em um elemento, como por exemplo ao passar o mouse sobre o elemento, quando for clicado, quando estiver sendo o foco, etc... Não demonstrarei todos, mas alguns básicos:</p>
+            <p>Usando o '<strong>:link</strong>', altera a estilização do link(neste caso 'a'):</p>
+        <pre>
+
+            <span class="html">html</span>
+            &lt;a href='#' class='teste'&gt;TESTE&lt;/a&gt;
+
+            <span class="css">css</span>
+            .teste:link {
+                color: blue;
+                font-size: 20px;
+                font-weight: bolder;
+                text-decoration: none;
+            }
+
+            RESULTADO
+
+            <a href="#" class="teste">TESTE</a>
+        </pre>
+        <p>Usando o '<strong>:visited</strong>', ao clicar no link, tornando-o visitado:</p>
+        <pre>
+
+            <span class="html">html</span>
+            &lt;a href='#' class='teste02'&gt;TESTE&lt;/a&gt;
+
+            <span class="css">css</span>
+            .teste:visited {
+                color: gray;
+            }
+
+            RESULTADO
+
+            <a href="#" class="teste02">TESTE</a>
+        </pre>
+            <p>Usando o '<strong>:hover</strong>', passando o mouse sobre o elemento:</p>    
+        <pre>
+
+            <span class="html">html</span>
+            &lt;a href='#' class='teste'&gt;TESTE&lt;/a&gt;
+
+            <span class="css">css</span>
+            .teste:hover {
+                color: yellowgreen;
+            }
+
+            RESULTADO
+
+            <a href="#" class="teste">TESTE</a>
+        </pre>
+            <p>Usando o '<strong>active</strong>', ao clicarmos e manter pressionado o elemento:</p>
+        <pre>
+
+            <span class="html">html</span>
+            &lt;a href='#' class='teste'&gt;TESTE&lt;/a&gt;
+
+            <span class="css">css</span>
+            .teste:active {
+                color: orange;
+            }
+
+            RESULTADO
+
+            <a href="#" class="teste">TESTE</a>
+        </pre>
+            <p>Há muitas outras pseudoclasses, como ':empty' quando o elemento não tem filhos, ':first-child' primeiro elemento filho de um elemento, para conhecer mais deles, veja <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">clicando aqui</a>.</p>
+            <a href="#spc" class="retorno">&#8634;</a>
+        </details>
+        <hr>
     </main>
-    <script src=''></script>
 </body>
 
 </html>
