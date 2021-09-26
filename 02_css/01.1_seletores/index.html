@@ -11,6 +11,7 @@
 
 <body>
     <main>
+        
         <h1>SELETORES CSS</h1>
         <p>São as formas que podemos selecionar(encontrar) os elementos que vamos estilizar, na qual podemos dividir em algumas categorias:</p>
         <p>
@@ -22,7 +23,7 @@
                 <li>Seletores de atributo(Seleciona com base no atributo ou seu valor)</li>
             </ul>
         </p>
-        <h3>SELETORES SIMPLES</h3>
+        <details><summary><h3 id="ss">SELETORES SIMPLES</h3></summary>
         <p>Selecionar um elemento com base em seu <strong>nome</strong>, por exemplo:</p>
         <pre>
 
@@ -71,6 +72,112 @@
 
             <abbr title="Observação">Obs</abbr>: Assim como o 'class' o 'id' também não pode começar com número.
         </pre>
+        <p>Existe também o <strong>seletor universal</strong>, que seleciona todos os elementos na página HTML, usando "*":</p>
+        <pre>
+
+            * {
+                <span class="destaque">regras CSS</span>
+            }
+        </pre>
+    <a href="#ss" class="retorno">&#8634;</a>
+        </details>
+        <hr>
+        <details><summary><h3 class="sc">SELETORES COMBINADOS</h3></summary>
+        <p>É o tipo de seletor que determina uma relação entre os seletores:</p>
+        <ul>
+            <li>Seletor descendente (espaço)</li>
+            <li>Seletor filho (>)</li>
+            <li>Seletor irmão adjacente (+)</li>
+            <li>Seletor irmão geral (~)</li>
+        </ul>
+        <p>Seletor <strong>descendente</strong> referesse a todos os elementos dentro do outro:</p>
+        <pre>
+
+            Ex: 'p' descendente de uma 'section':
+
+            <span class="html">html</span>
+            &lt;section&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span> 
+                &lt;div&gt;
+                    <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+                &lt;/div&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+            &lt;/section&gt;
+
+            E para selecionarmos os elementos 'p' em um 'section':
+
+            <span class="css">css</span>
+            <span class="destaque">section p</span> {
+
+            }
+        </pre>
+        <p>Seletor <strong>filho</strong> referesse a elementos filhos diretos de um elemento:</p>
+        <pre>
+
+            <span class="html">html</span>
+            &lt;section&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span> 
+                &lt;div&gt;
+                    &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+            &lt;/section&gt;
+
+            <span class="css">css</span>
+            <span class="destaque">section > p</span> {
+
+            }
+        </pre>
+        <p>Seletor <strong> irmão adjacente</strong> referesse ao primeiro elemento correspondente:</p>
+        <pre>
+
+            <span class="html">html</span>
+            &lt;section&gt;
+                &lt;div&gt;
+                    &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;div&gt;
+                    &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+            &lt;/section&gt;
+
+            <span class="css">css</span>
+            <span class="destaque">div + p</span> {
+
+            }
+        </pre>
+        <p>Seletor <strong>irmão geral</strong> referesse aos elementos seguinte a outro elemento:</p>
+        <pre>
+
+            <span class="html">html</span>
+            &lt;section&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;div&gt;
+                    &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+                &lt;div&gt;
+                    &lt;p&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+                <span class="destaque">&lt;p&gt;&lt;/p&gt;</span>
+            &lt;/section&gt;
+
+            <span class="css">css</span>
+            <span class="destaque">div ~ p</span> {
+
+            }
+        </pre>
+        <a href="#sc" class="retorno">&#8634;</a>
+        </details>
     </main>
     <script src=''></script>
 </body>
