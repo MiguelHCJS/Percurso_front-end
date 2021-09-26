@@ -1,0 +1,13 @@
+@import url("/02_css/01_fundamentos/style/css.css"); /* folha de estilo importada */
+
+/* Mais regras, junto as já determinadas na folha importada */
+ul {
+    list-style: inside;
+    list-style-type: square;
+}
+
+.html, .css {
+    font-weight: bolder;
+    color: rgb(27, 142, 187);
+    text-transform: uppercase;
+}
