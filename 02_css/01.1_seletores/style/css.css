@@ -29,36 +29,21 @@ details {
     padding: 10px;
 }
 
-.teste:link {
+.teste:link, .teste02:link, .teste3:link, .teste4:link {
     color: blue;
     font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
 }
 
-.teste:hover {
+.teste3:hover {
     color: yellowgreen;
 }
 
-.teste:active {
+.teste4:active {
     color: orange;
-}
-
-.teste02:link {
-    color: blue;
-    font-size: 20px;
-    font-weight: bolder;
-    text-decoration: none;
 }
 
 .teste02:visited {
     color: gray;
-}
-
-.teste02:hover {
-    color: yellowgreen;
-}
-
-.teste02:active {
-    color: orange;
 }
