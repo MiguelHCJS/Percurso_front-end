@@ -47,3 +47,37 @@ details {
 .teste02:visited {
     color: gray;
 }
+
+.prg::first-letter {
+    font-size: 3em;
+    color: blue;
+}
+
+.prg2::first-line {
+    color: red;
+}
+
+.contentAfter::after {
+    content: ", Como vai?";
+    color: darkorange;
+}
+
+.contentBefore::before {
+    content: "Hey, ";
+    color: darkorange;
+}
+
+/* Propriedades aplicadas apenas para corrigir estado na reação do elemento */
+ul {
+    position: relative;
+    left: 100px;
+}
+
+pre ::marker {
+    color: blue;
+    font-size: 1.5em;
+}
+
+.select::selection {
+    color: green;
+}

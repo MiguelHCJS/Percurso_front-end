@@ -246,6 +246,133 @@
             <a href="#spc" class="retorno">&#8634;</a>
         </details>
         <hr>
+        <details><summary><h3 id="spe">SELETORES DE PSEUDOELEMENTOS</h3></summary>
+            <p>Usado para estilizar partes específicas de elementos, como a primeira letra de um elemento, inserir outro elemento ou algo após ou antes de um elemento</p>
+            <p>Usando o '<strong>::first-letter</strong>', modificamos a primeira letra de um elemento, algumas mudanças possíveis como propriedade de fonte, cor, margem, borda:</p>
+            <pre>
+
+            <span class="html">html</span>
+            
+            &lt;p class='prg'&gt;Primeira letra do parágrafo&lt;/p&gt;
+
+            <span class="css">css</span>
+
+            .prg::first-letter {
+                font-size: 3em;
+                color: blue;
+            }
+
+            RESULTADO
+
+            <p class="prg">   Primeira letra do parágrafo</p>
+
+            Este pseudoelemento só pode ser usado em elemento em nível de bloco.
+            </pre>
+            <p>Usando o '<strong>::first-line</strong>', modificamos a primeira linha do elemento, algumas mudanças possíveis como propriedade de fonte, cor, margem, borda:</p>
+            <pre>
+            
+            <span class="html">html</span>
+
+            &lt;p class='prg2'&gt;&lt;/p&gt;
+
+            <span class="css">css</span>
+
+            .prg2::first-line {
+                background-color: red;
+            }
+
+            RESULTADO:
+            <p class="prg2">         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Optio minus suscipit quae excepturi omnis eius autem sit voluptatibus harum? Inve
+            ntore nulla mollitia asperiores error ducimus ut deserunt dicta modi tempore!</p>
+
+            Este pseudoelemento só pode ser usado em elemento em nível de bloco.
+            </pre>
+            <p>Usando o '<strong>::after</strong>', inserimos algo após o conteúdo especificado, usando a propriedade 'content':</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;p class='contentAfter'&gt;Olá&lt;/p&gt;
+
+            <span class="css">css</span>
+            
+            .contentAfter::after {
+                content: '&lt;p&gt;Como vai?&lt;/p&gt;'
+                color: darkorange;
+            }
+
+            RESULTADO
+
+            <span class="contentAfter">Olá</span>
+
+            </pre>
+            <p>Usando o '<strong>::before</strong>', inserimos algo antes do conteúdo especificado, usando a propriedade 'content':</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;p class='contentBefore'&gt;Olá&lt;/p&gt;
+
+            <span class="css">css</span>
+            
+            .contentAfter::before {
+                content: '&lt;p&gt;Hey! &lt;/p&gt;'
+                color: darkorange;
+            }
+
+            RESULTADO
+
+            <span class="contentBefore">Olá!</span>
+
+            </pre>
+            <p>Usando o '<strong>::marker</strong>', será selecionado os marcadores de listas:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;ul&gt;
+                &lt;li&gt;Um&lt;/li&gt;
+                &lt;li&gt;Dois&lt;/li&gt;
+                &lt;li&gt;Três&lt;/li&gt;
+            &lt;/ul&gt;
+
+            <span class="css">css</span>
+
+            ::marker {
+                color: blue;
+                font-size: 1.5em;
+            }
+
+            RESULTADO
+            <ul><li>Um</li><li>Dois</li><li>Três</li></ul> <!-- Está em uma linha apenas para melhor exibição na página -->
+            </pre>
+            <p>Usando o '<strong>::selection</strong>', permite aplicar algumas mudanças no estado do elemento selecionado, como a cor, plano de fundo, cursor e contorno:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            <span class="select">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit iure quisquam placeat, perspiciatis quaerat repudiandae,
+            sed molestiae, quas ipsa labore cumque. Similique eveniet quas quam,
+            nobis ullam suscipit. Dolorem, aperiam!</span>
+            
+            <span class="css">css</span>
+
+            .select::selection {
+                color: green;
+            }
+
+            RESULTADO (Selecione palavras)
+
+            <span class="select">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit iure quisquam placeat, perspiciatis quaerat repudiandae,
+            sed molestiae, quas ipsa labore cumque. Similique eveniet quas quam,
+            nobis ullam suscipit. Dolorem, aperiam!</span>
+            </pre>
+            <a href="#spe" class="retorno">&#8634;</a>
+        </details>
+        <hr>
     </main>
 </body>
 
