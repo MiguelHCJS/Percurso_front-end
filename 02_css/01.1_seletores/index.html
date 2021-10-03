@@ -373,6 +373,88 @@
             <a href="#spe" class="retorno">&#8634;</a>
         </details>
         <hr>
+        <!-- <details> --><summary><h3 id='sa'>SELETORES DE ATRIBUTO</h3></summary>
+            <p>Permite estilizar elementos com atributos específicos, usando "[]":</p>
+            <p>Podemos selecionar <strong>todos os elementos com um atributo</strong> específico:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='all'&gt;Clique aqui&lt;/a&gt;
+            
+            &lt;a class='all'&gt;Clique aqui&lt;/a&gt;
+
+            &lt;a class='all'&gt;Clique aqui&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class='all'] {
+                color: red;
+            }
+
+            RESULTADO
+
+            <a href="#" class='all'>Clique aqui</a>
+
+            <a href="#" class='all'>Clique aqui</a>
+
+            <a href="#" class='all'>Clique aqui</a>
+
+            </pre>
+            <p>Podemos selecionar <strong>elementos com valores específicos</strong>:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+            
+            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+
+            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class='one'] {
+                color: orange;
+            }
+
+            RESULTADO
+
+            <a href="#" class='one'>Clique aqui</a>
+
+            <a href="#" class='zero'>Clique aqui</a>
+
+            <a href="#" class='one'>Clique aqui</a>
+
+            </pre>
+            <p>Podemos também selecionar por <strong>um atributo que contenha do declarado</strong>:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='one two'&gt;Clique aqui&lt;/a&gt;
+            
+            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+
+            &lt;a class='one two'&gt;Clique aqui&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class~='two'] {
+                color: yellowgreen;
+            }
+
+            RESULTADO
+
+            <a href="#" class='zero two'>Clique aqui</a>
+
+            <a href="#" class='zero'>Clique aqui</a>
+
+            <a href="#" class='zero two'>Clique aqui</a>
+
+            </pre>
+            
+        <!-- </details> -->
     </main>
 </body>
 

@@ -81,3 +81,15 @@ pre ::marker {
 .select::selection {
     color: green;
 }
+
+a[class='all'] {
+    color: red;
+}
+
+a[class='one'] {
+    color: orange;
+}
+
+a[class~='two'] {
+    color: yellowgreen;
+}
