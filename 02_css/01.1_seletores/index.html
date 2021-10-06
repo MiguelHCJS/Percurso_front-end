@@ -373,18 +373,18 @@
             <a href="#spe" class="retorno">&#8634;</a>
         </details>
         <hr>
-        <!-- <details> --><summary><h3 id='sa'>SELETORES DE ATRIBUTO</h3></summary>
+        <details><summary><h3 id='sa'>SELETORES DE ATRIBUTO</h3></summary>
             <p>Permite estilizar elementos com atributos específicos, usando "[]":</p>
             <p>Podemos selecionar <strong>todos os elementos com um atributo</strong> específico:</p>
             <pre>
 
             <span class="html">html</span>
 
-            &lt;a class='all'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='all'&gt;Hyperlink&lt;/a&gt;
             
-            &lt;a class='all'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='all'&gt;Hyperlink&lt;/a&gt;
 
-            &lt;a class='all'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='all'&gt;Hyperlink&lt;/a&gt;
             
             <span class="css">css</span>
 
@@ -394,11 +394,11 @@
 
             RESULTADO
 
-            <a href="#" class='all'>Clique aqui</a>
+            <a href="#" class='all'>Hyperlink</a>
 
-            <a href="#" class='all'>Clique aqui</a>
+            <a href="#" class='all'>Hyperlink</a>
 
-            <a href="#" class='all'>Clique aqui</a>
+            <a href="#" class='all'>Hyperlink</a>
 
             </pre>
             <p>Podemos selecionar <strong>elementos com valores específicos</strong>:</p>
@@ -406,11 +406,11 @@
 
             <span class="html">html</span>
 
-            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='one'&gt;Hyperlink&lt;/a&gt;
             
-            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='zero'&gt;Hyperlink&lt;/a&gt;
 
-            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='one'&gt;Hyperlink&lt;/a&gt;
             
             <span class="css">css</span>
 
@@ -420,23 +420,23 @@
 
             RESULTADO
 
-            <a href="#" class='one'>Clique aqui</a>
+            <a href="#" class='one'>Hyperlink</a>
 
-            <a href="#" class='zero'>Clique aqui</a>
+            <a href="#" class='zero'>Hyperlink</a>
 
-            <a href="#" class='one'>Clique aqui</a>
+            <a href="#" class='one'>Hyperlink</a>
 
             </pre>
-            <p>Podemos também selecionar por <strong>um atributo que contenha do declarado</strong>:</p>
+            <p>Podemos também selecionar por <strong>um atributo que contenha no declarado</strong>:</p>
             <pre>
 
             <span class="html">html</span>
 
-            &lt;a class='one two'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='one two'&gt;Hyperlink&lt;/a&gt;
             
-            &lt;a class='one'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='one'&gt;Hyperlink&lt;/a&gt;
 
-            &lt;a class='one two'&gt;Clique aqui&lt;/a&gt;
+            &lt;a class='one two'&gt;Hyperlink&lt;/a&gt;
             
             <span class="css">css</span>
 
@@ -446,15 +446,124 @@
 
             RESULTADO
 
-            <a href="#" class='zero two'>Clique aqui</a>
+            <a href="#" class='zero two'>Hyperlink</a>
 
-            <a href="#" class='zero'>Clique aqui</a>
+            <a href="#" class='zero'>Hyperlink</a>
 
-            <a href="#" class='zero two'>Clique aqui</a>
+            <a href="#" class='zero two'>Hyperlink</a>
 
             </pre>
+            <p>Podemos também selecionar por <strong>um atributo que começe com uma palavra específica</strong>:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='three'&gt;Hyperlink&lt;/a&gt;
             
-        <!-- </details> -->
+            &lt;a class='zero-three'&gt;Hyperlink&lt;/a&gt;
+
+            &lt;a class='three-zero'&gt;Hyperlink&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class|='three'] {
+                color: darkmagenta;
+                font-weight: bolder;
+            }
+
+            RESULTADO
+
+            <a href="#" class='three'>Hyperlink</a>
+
+            <a href="#" class='zero-three'>Hyperlink</a>
+
+            <a href="#" class='three'>Hyperlink</a>
+
+            </pre>
+            <p>Podemos também selecionar por <strong>um atributo que começe com uma palavra, porém que não precisa ser uma palavra inteira</strong>:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='terno'&gt;Hyperlink&lt;/a&gt;
+            
+            &lt;a class='terra'&gt;Hyperlink&lt;/a&gt;
+
+            &lt;a class='teto'&gt;Hyperlink&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class^='ter'] {
+                color: darkblue;
+                font-size: 1.1em;
+            }
+
+            RESULTADO
+
+            <a href="#" class='terno'>Hyperlink</a>
+
+            <a href="#" class='terra'>Hyperlink</a>
+
+            <a href="#" class='teto'>Hyperlink</a>
+
+            </pre>
+            <p>Podemos também selecionar por <strong>um atributo que termine com uma palavra, porém que não precisa ser uma palavra inteira</strong>:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='correr'&gt;Hyperlink&lt;/a&gt;
+            
+            &lt;a class='comer'&gt;Hyperlink&lt;/a&gt;
+
+            &lt;a class='voar'&gt;Hyperlink&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class$='er'] {
+                color: violet;
+                font-size: 1.1em;
+            }
+
+            RESULTADO
+
+            <a href="#" class='correr'>Hyperlink</a>
+
+            <a href="#" class='comer'>Hyperlink</a>
+
+            <a href="#" class='voar'>Hyperlink</a>
+
+            </pre>
+            <p>Podemos também selecionar por <strong>um atributo que contenha uma palavra, e ela não precisa ser uma palavra inteira, podendo estar no começo, meio ou fim de uma palavra</strong>:</p>
+            <pre>
+
+            <span class="html">html</span>
+
+            &lt;a class='planicie'&gt;Hyperlink&lt;/a&gt;
+            
+            &lt;a class='aeroplano'&gt;Hyperlink&lt;/a&gt;
+
+            &lt;a class='manopla'&gt;Hyperlink&lt;/a&gt;
+            
+            <span class="css">css</span>
+
+            a[class$='pla'] {
+                color: darkgreen;
+                font-size: 1.1em;
+            }
+
+            RESULTADO
+
+            <a href="#" class='planicie'>Hyperlink</a>
+
+            <a href="#" class='aeroplano'>Hyperlink</a>
+
+            <a href="#" class='manopla'>Hyperlink</a>
+
+            </pre>
+
+            <a href="#sa" class="retorno">&#8634;</a>
+        </details>
     </main>
 </body>
 

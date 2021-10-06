@@ -93,3 +93,23 @@ a[class='one'] {
 a[class~='two'] {
     color: yellowgreen;
 }
+
+a[class|="three"] {
+    color: darkmagenta;
+    font-weight: bolder;
+}
+
+a[class^='ter'] {
+    color: darkblue;
+    font-size: 1.1em;
+}
+
+a[class$='er'] {
+    color: violet;
+    font-size: 1.1em;
+}
+
+a[class*='pla'] {
+    color: darkgreen;
+    font-size: 1.1em;
+}
