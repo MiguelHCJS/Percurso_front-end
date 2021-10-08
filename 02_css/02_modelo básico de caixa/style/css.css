@@ -1,0 +1,15 @@
+@import url("/02_css/01_fundamentos/style/css.css");
+
+h1 {
+    text-align: center;
+}
+
+.exDiv {
+    position: relative;
+    background-color: brown;
+    height: 100px;
+}
+
+.exSpan {
+    background-color: brown;
+}
