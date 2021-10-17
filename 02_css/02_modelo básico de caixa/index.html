@@ -25,11 +25,98 @@
 
             Exemplo de um elemento inline: <span class="exSpan">O elemento 'span'</span>.
         </pre>
+
+        <br>
+
         <h3>AS DIMENSÕES DAS CAIXAS(BOXES)</h3>
         <p>Representação das áreas do modelo de caixa:</p>
         <img src="img/boxmodel.png" alt="Box Model" class="imgBoxModel">
+        <p>A propriedade <strong>Margin</strong> define a espessura da distancia de um elemento para outro, ou de uma borda até o elemento;</p>
+        <pre>
+
+        <span class="css">css</span>
         
-    
+        p {
+            margin-top: 1px;
+            margin-right: 2px;
+            margin-bottom: 3px;
+            margin-left: 4px
+        }
+
+        Ou de forma abreviada, considerando que a ordem:
+
+        <strong>4 VALORES</strong> (top, right, bottom, left)
+        p {
+            margin: 1px 2px 3px 4px;
+        }
+
+        <strong>3 VALORES</strong> (top, left e right, bottom)
+        p {
+            margin: 2px 3px 2px
+        }
+
+        <strong>2 VALORES</strong> (top e bottom, left e right)
+        p {
+            margin: 2px 4px;
+        }
+
+        <strong>1 VALOR</strong> (define todos os lados ao mesmo valor)
+        p {
+            margin: 3px;
+        }
+        
+        </pre>
+        <p>A propriedade <strong>padding</strong> define o "enchimento" a parte de dentro elemento, entre a borda e o conteúdo:</p>
+        <pre>
+        <span class="css">css</span>
+
+        p {
+            padding-top: 1px;
+            padding-right: 2px;
+            padding-bottom: 3px;
+            padding-left: 4px
+        }
+
+        A forma abreviada segue as mesmas regras da propriedade <strong>Margin</strong>, as mesmas 4 formas de declarar.
+
+        </pre>
+        <p>A propriedade <strong>Border</strong> define a linha de contorno do elemento(borda), a sua cor, estilo e espessura:</p>
+        <pre>
+
+        <span class="css">css</span>
+        
+        <strong>ESPESSURA</strong>
+        p {
+            border-top-width: 1px;
+            border-right-width: 2px;
+            border-bottom-width: 3px;
+            border-left-width: 4px
+        }
+
+        <strong>ESTILO</strong>
+        p {
+            border-top-style: solid;
+            border-right-style: dotted;
+            border-bottom-style: dashed;
+            border-left-style: double;
+        }
+
+        <strong>COR</strong>
+        p {
+            border-top-color: red;
+            border-right-color: blue;
+            border-bottom-color: green;
+            border-left-color: yellow;
+        }
+
+
+        A forma abreviada segue as mesmas regras da propriedade <strong>Margin</strong>, as mesmas 4 formas de declarar.
+        
+        E uma outra forma de declaração chamada <strong>shorthand</strong>, para declarar as três opções em uma unida linha:
+        p {
+            border: 1px solid red; 
+        }
+        </pre>
     </main>
 
     <script src=''></script>
