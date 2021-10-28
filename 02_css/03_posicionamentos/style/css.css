@@ -1,0 +1,5 @@
+@import url("/02_css/01.1_seletores/style/css.css");
+
+ul {
+    list-style-type: none;
+}
