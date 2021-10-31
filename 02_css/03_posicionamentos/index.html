@@ -12,8 +12,8 @@
 <body>
     <main>
         <h1>Posicionamentos</h1>
-        <p>Relativo ao posicionamento do elemento</p>
         <section class="ulItens">
+            <h3>position:</h3>
             <a href="#abs">absolute</a>
             <a href="#rel">relative</a>
             <a href="#sta">static</a>
@@ -24,13 +24,29 @@
 
         <section class="abs" id="abs">
             <h3>Absolute</h3>
-            <p>Este posicionamento retira o elemento do fluxo do documento, levando o elemento seguinte ocupar o seu lugar:</p>
+            <p>Este posicionamento retira o elemento do fluxo do documento, levando o elemento seguinte ocupar o seu
+                lugar:</p>
         <pre>
-        <div class="ExAbs"></div>
-        <div class="ExAbs2"></div>
-        Como podemos notar, o elemento vermelho está em "absolute",
-        levando o elemento seguinte a ocupar o seu lugar.
+        Sem posicionamento absoluto:
+        <span class="ExAbs0"></span><span class="ExAbs3"></span>
+        Com posicionamento absoluto no elemento em vermelho:
+        <span class="ExAbs"></span><span class="ExAbs2"></span>
+        Como podemos notar, o elemento vermelho está em "absolute", levando o elemento seguinte a ocupar o seu
+        lugar.
         </pre>
+        </section>
+        <section class="rel" id="rel">
+            <h3>Relative</h3>
+            <p>Aplicada sozinha ela não surte nenhum efeito, mas aplicando as própriedades: top, right, bottom, left.
+                Ela se moverá a partir do seu ponto inicial</p>
+        <pre>
+        O segundo quadrado está em posicionamento relativo e recebeu left=70px e top=40px, ou seja, afastou-se
+        da esquerda 70px e 40px do top;
+        <span class="rel1"></span>
+        <span class="rel2"></span>
+        <span class="rel3"></span>
+        </pre>
+
         </section>
 
 

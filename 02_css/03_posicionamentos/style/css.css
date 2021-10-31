@@ -11,8 +11,8 @@ h3 {
 .ulItens {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 30px;
-    position: sticky;
+    height: 30px;
+    align-items: center;
 }
 
 .ulItens a {
@@ -29,17 +29,52 @@ h3 {
     transition: 1.5s;
 }
 
+section {
+    margin: 20px 0;
+}
+
+pre {
+    padding-left: 30px;
+}
+
+span {
+    display: block;
+}
+
 .ExAbs {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: red;
     position: absolute;
-    left: 150px;
 }
 
 .ExAbs2 {
     width: 50px;
     height: 50px;
     background-color: blue;
-    margin-left: 23px;
+}
+
+.ExAbs0 {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.ExAbs3 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.rel1, .rel2, .rel3 {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+}
+
+.rel2 {
+    left: 70px;
+    top: 40px;
 }
