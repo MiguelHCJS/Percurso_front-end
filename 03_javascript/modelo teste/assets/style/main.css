@@ -1,0 +1,14 @@
+:root {
+    --bk-color: rgb(87, 43, 43);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bk-color);
+}
